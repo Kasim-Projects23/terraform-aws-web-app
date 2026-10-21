@@ -4,7 +4,7 @@ resource "aws_security_group" "web" {
   name                   = "${var.project_name}-web-sg"
   description            = "Security group for the web application"
   vpc_id                 = var.vpc_id
-  egress                 = []
+
 
 
   tags = {
