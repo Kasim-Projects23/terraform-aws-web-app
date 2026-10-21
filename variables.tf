@@ -18,3 +18,10 @@ variable "availability_zone" {
   description = "Availability Zone for the public subnet"
   type        = string
 }
+
+
+
+variable "ssh_allowed_cidr" {
+  description = "Public IPv4 CIDR allowed to connect over SSH"
+  type        = string
+}
