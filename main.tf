@@ -18,3 +18,15 @@ module "security" {
 
   ssh_allowed_cidr = var.ssh_allowed_cidr
 }
+
+
+
+module "web_server" {
+  source = "./modules/web-server"
+
+  project_name      = var.project_name
+  subnet_id         = module.networking.public_subnet_id
+  security_group_id = module.security.security_group_id
+  instance_type     = var.instance_type
+  key_name          = var.key_name
+}
