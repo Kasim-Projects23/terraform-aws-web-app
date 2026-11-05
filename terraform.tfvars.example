@@ -3,4 +3,5 @@ project_name      = "terraform-aws-web-app"
 vpc_cidr          = "10.0.0.0/16"
 subnet_cidr       = "10.0.1.0/24"
 availability_zone = "eu-west-2a"'
-ssh_allowed_cidr = "203.0.113.10/32"
+ssh_allowed_cidr  = "203.0.113.10/32"
+key_name          = "terraform-aws-web-app-key"
